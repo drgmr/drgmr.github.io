@@ -1,5 +1,10 @@
 * {
   font-family: "inconsolata";
+  font-size: 1.4rem;
+}
+
+p {
+  margin: 0;
 }
 
 body {
@@ -11,6 +16,23 @@ body {
   grid-template-rows: 95fr 3fr;
 
   background: #2E3440;
+}
+
+main {
+  padding: 0 1em 0 1em;
+  counter-reset: line;
+}
+
+main {
+  color: white;
+}
+
+main p:before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  padding-right: 1em;
+  color: #4C566A;
 }
 
 nav {
