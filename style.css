@@ -1,5 +1,5 @@
 * {
-  font-family: "roboto";
+  font-family: "inconsolata";
 }
 
 body {
@@ -13,57 +13,37 @@ body {
   background: #2E3440;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+nav {
+  background: #3B4252;
 
-  height: 100%;
+  display: flex;
+  flex-direction: row;
 
-  list-style: none;
-  display: inline;
+  justify-content: space-between;
 }
 
-ul > li {
-  height: 100%;
-
-  display: inline-block;
-
-  width: 20%;
-  text-align: center;
+.sessions, .status {
+  display: flex;
+  flex-direction: row;
 }
 
-li:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-
-ul > li {
+.sessions > *, .status > * {
   background: #4C566A;
   color: white;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 .5em 0 .5em;
 }
 
-ul > li:first-child {
+.sessions > *:first-child, .status > *:last-child {
   font-weight: bold;
   color: #4C566A;
   background: #81A1C1;
 }
 
 .active-session {
-  background: #88C0D0 !important;
-  color: #3B4252 !important;
-}
-
-nav {
-}
-
-main {
-}
-
-main > div {
-}
-
-footer {
-  background: #3B4252;
+  background: #88C0D0;
+  color: #3B4252;
 }
